@@ -29,3 +29,20 @@
 - 不允许做算法复杂度优化
 - 可以针对编译器和平台优化，这次不要求跨平台
 - 可以用 xmmintrin.h，如果你觉得编译器靠不住的话
+
+## 解答
+- 循环展开unroll
+- 修改star的格式为SOA
+- 编译选项开启-ffast-math -march=native
+- sqrt前用std::sqrt,使用模板完成传入参数匹配
+- i和j改为std::size_t
+
+```
+Initial energy: -13.414011
+Final energy: -13.356913
+Time elapsed: 2795 ms
+
+Initial energy: -13.414011
+Final energy: -13.356913
+Time elapsed: 286 ms
+```
